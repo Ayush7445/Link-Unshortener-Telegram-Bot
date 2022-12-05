@@ -1,0 +1,26 @@
+{
+    "name": "Bitly Bot",
+    "description": "Modular Telegram Bot to shorten urls.",
+    "keywords": [
+        "telegram",
+        "bot",
+        "link",
+        "unshortner"
+    ],
+    "repository": "https://github.com/Ayush7445/Link-Unshortener-Telegram-Bot",
+    "env": {
+        "API_TOKEN": {
+            "description": "Get it from @BotFather"
+        }
+    },
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "heroku-20"
+}
