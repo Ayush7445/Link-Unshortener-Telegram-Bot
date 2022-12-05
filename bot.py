@@ -12,7 +12,7 @@ def send_welcome(message):
     msg = message
     bot.reply_to(msg,  
      f"Hi {msg.chat.first_name}!\n\n"
-        "I'm link Unshortener bot. Just send me link and get shortened link.\n\n Created By @steallootdeal"
+        "I'm link Unshortener bot. Just send me short Url and get Unshortened Url.\n\n Created By @steallootdeal"
     )
 
 @bot.message_handler(func=lambda message: True)
